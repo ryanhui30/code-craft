@@ -1,4 +1,5 @@
 "use client";
+
 import { useCodeEditorStore } from "@/store/useCodeEditorStore";
 import { useEffect, useRef, useState } from "react";
 import { LANGUAGE_CONFIG } from "../_constants";
@@ -167,4 +168,5 @@ function LanguageSelector({ hasAccess }: { hasAccess: boolean }) {
     </div>
   );
 }
+
 export default LanguageSelector;
