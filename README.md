@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Code Craft 🚀  
+**The Ultimate SaaS Online IDE**  
 
-## Getting Started
+[Live Demo](https://code-craft-demo.vercel.app) | [GitHub](https://github.com/ryanhui30/code-craft)  
 
-First, run the development server:
+---
 
+## ✨ Key Features  
+- **💻 Multi-Language IDE**  
+  Supports 10+ languages with real-time execution  
+- **🎨 Theme Customization**  
+  5 VSCode-inspired themes with dark/light mode  
+- **📊 Execution Analytics**  
+  Track success/error states with detailed output logging  
+- **🔍 Smart Search**  
+  Advanced filtering for community code snippets  
+- **👤 Personalized Workspace**  
+  Font sizing controls and execution history  
+- **🤝 Community Sharing**  
+  Publish, discover, and comment on code snippets with peers  
+
+---
+
+## 🛠️ Tech Stack  
+
+### Core Platform  
+| Technology       | Use Case                     |
+|------------------|------------------------------|
+| Next.js 15       | App Router & Server Actions  |
+| Convex           | Real-time Database           |
+| Clerk            | Auth & User Profiles         |
+| TypeScript       | Type-Safe Codebase           |
+
+### Editor Experience  
+| Component        | Technology                   |
+|------------------|------------------------------|
+| Code Execution   | Docker + WebAssembly         |
+| Syntax Highlight | React Syntax Highlighter     |
+| UI Components    | Shadcn + Tailwind CSS        |
+
+### Integrations  
+| Service          | Functionality                |
+|------------------|------------------------------|
+| Webhooks         | Third-party Integrations     |
+| Vercel Analytics | Usage Monitoring             |
+| GitHub API       | Code Import/export           |
+| Convex           | Real-time Database           |
+| Lemon Squeezy    | Saas Payment                 |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites  
+- Node.js v18+  
+- Convex account  
+- Clerk application  
+
+### Installation  
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/ryanhui30/code-craft.git
+cd code-craft
+npm install
+cp .env.example .env.local
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Environment Variables
+```bash
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Convex DB
+NEXT_PUBLIC_CONVEX_URL=
+CONVEX_DEPLOYMENT_KEY=
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Running the App
+```bash
+npm run dev          # Start dev server
+npx convex dev       # Launch Convex
+```
 
-## Learn More
+## **Need Help**?
+📩 Contact: ryanhui30@gmail.com
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
