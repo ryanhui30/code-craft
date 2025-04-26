@@ -1,7 +1,7 @@
 # Code Craft 🚀  
 **The Ultimate SaaS Online IDE**  
 
-[Live Demo](https://code-craft-demo.vercel.app) | [GitHub](https://github.com/ryanhui30/code-craft)  
+[Live Demo](https://code-craft-kappa-lyart.vercel.app/) | [GitHub](https://github.com/ryanhui30/code-craft)  
 
 ---
 
@@ -45,7 +45,7 @@
 | Vercel Analytics | Usage Monitoring             |
 | GitHub API       | Code Import/export           |
 | Convex           | Real-time Database           |
-| Lemon Squeezy    | Saas Payment                 |
+| Lemon Squeezy    | SaaS Payment                 |
 
 ---
 
@@ -56,29 +56,43 @@
 - Convex account  
 - Clerk application  
 
-### Installation  
-```bash
-git clone https://github.com/ryanhui30/code-craft.git
-cd code-craft
-npm install
-cp .env.example .env.local
-```
+## **Development Setup**  
+1. **Clone the repo**:  
+  ```bash
+  git clone https://github.com/ryanhui30/code-craft.git
+  cd code-craft
+  ```
 
-### Environment Variables
-```bash
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
+2. **Install dependencies**:
+  ```bash
+  npm install
+  ```
 
-# Convex DB
-NEXT_PUBLIC_CONVEX_URL=
-CONVEX_DEPLOYMENT_KEY=
-```
+3. **Configure environment variables**:
+- Duplicate .env.example as .env.local
+- Add your credentials:
+  ```bash
+  # Clerk Authentication
+  NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_key_here
+  CLERK_SECRET_KEY=your_key_here
+  
+  # Convex Database
+  NEXT_PUBLIC_CONVEX_URL=your_url_here
+  CONVEX_DEPLOYMENT_KEY=your_key_here
+  ```
 
-### Running the App
-```bash
-npm run dev          # Start dev server
-npx convex dev       # Launch Convex
-```
+
+4. **Database Setup**:
+  ```bash
+  npx convex dev
+  npx convex deploy
+  ```
+
+5. **Run locally**:
+  ```bash
+  npm run dev          # Start dev server
+  npx convex dev       # Launch Convex
+  ```
 
 ## **Need Help**?
 📩 Contact: ryanhui30@gmail.com
