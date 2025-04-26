@@ -80,8 +80,7 @@
   NEXT_PUBLIC_CONVEX_URL=your_url_here
   CONVEX_DEPLOYMENT_KEY=your_key_here
   ```
-
-
+  
 4. **Database Setup**:
   ```bash
   npx convex dev
